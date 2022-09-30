@@ -1,0 +1,10 @@
+{
+  "type": "record",
+  "namespace": "com.example.avro.schema",
+  "name": "OrderEvent",
+  "version": "1",
+  "fields": [
+    { "name": "item", "type": "string" },
+    { "name": "amount", "type": "double"}
+  ]
+}

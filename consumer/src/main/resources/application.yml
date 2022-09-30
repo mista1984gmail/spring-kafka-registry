@@ -1,0 +1,25 @@
+server:
+  port: 8085
+
+spring:
+  kafka:
+    consumer:
+      group-id: group-id-new
+    bootstrap-servers: localhost:29092
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  datasource:
+    password: admin
+    url: jdbc:postgresql://localhost:15432/avro_database
+    username: postgres
+
+schema:
+  registry:
+    url: http://localhost:8081
+
+messaging:
+  topic:
+    order: topic-order-new
